@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "code block selector",
+  "description": "This extension  allows code block selecting",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "http*",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["codeblocks.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
