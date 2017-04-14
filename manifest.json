@@ -6,13 +6,14 @@
   "version": "1.0",
 
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite"
   ],
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["codeblocks.js"],
-      "run_at": "document_idle"
+      "js": ["jquery.min.js", "clipboard.js", "codeblocks.js"]
     }
   ]
 }
