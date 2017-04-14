@@ -6,9 +6,7 @@
   "version": "1.0",
 
   "permissions": [
-    "activeTab",
-    "http*",
-    "https://ajax.googleapis.com/"
+    "activeTab"
   ],
   "content_scripts": [
     {
