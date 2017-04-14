@@ -1,21 +1,34 @@
-.codeButton {
-  box-shadow: rgb(145, 184, 179) 0px 1px 3px 0px inset;
-  background: linear-gradient(rgb(118, 141, 135) 5%, rgb(108, 124, 124) 100%) rgb(118, 141, 135);
-  border-radius: 5px;
-  border: 1px solid rgb(86, 105, 99);
-  display: inline-block;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-  font-family: Arial;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 0 47px;
-  text-decoration: none;
-  text-shadow: rgb(43, 102, 94) 0px -1px 0px;
-}
-
-span > img.clip {
+.clip {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/img/copy.png');
+  background-size: 100%;
   height: 30px;
   width: 30px;
-  margin: 0;
+  margin: 0 0 0 0;
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  outline: 3px dashed blue;
+
+}
+
+/*.emptyClip {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/img/copy.png');
+}*/
+
+.copiedClip {
+  background-image:url('chrome-extension://__MSG_@@extension_id__/img/copied.svg');
+  display: block;
+}
+
+pre {
+  position: relative;
+  display: block;
+  outline: 3px dashed hotpink;
+}
+
+pre:hover .clip {
+  display: block;
 }

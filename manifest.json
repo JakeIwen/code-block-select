@@ -18,5 +18,5 @@
       "run_at": "document_idle"
     }
   ],
-  "web_accessible_resources": ["copy.png", "copied.svg"]
+  "web_accessible_resources": ["img/copy.png", "img/copied.svg", "img/empty.svg"]
 }
