@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["jquery.min.js", "clipboard.js", "codeblocks.js"]
+      "js": ["clipboard.js", "codeblocks.js"]
     }
   ]
 }
