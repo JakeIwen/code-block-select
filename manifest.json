@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "CodeCopy",
-  "description": "This extension  allows code block selecting",
+  "description": "This extension allows code block copying",
   "version": "1.0",
 
   "permissions": [
@@ -14,9 +14,12 @@
     {
       "matches": ["http://*/*", "https://*/*"],
       "js": ["clipboard.js", "codeblocks.js"],
-      "css": ["button.css"],
+      "css": ["clipboard.css"],
       "run_at": "document_idle"
     }
   ],
-  "web_accessible_resources": ["img/copy.png", "img/copied.svg", "img/empty.svg"]
+  "web_accessible_resources": [
+    "img/copy.svg",
+    "img/copied.svg"
+  ]
 }
